@@ -33,4 +33,21 @@ int main() {
             adaSimbol = true; 
         }
     }
+    
+    if (adaHurufKecil && !adaHurufBesar && !adaAngka && !adaSimbol) {
+        karakter = 26; 
+    } 
+    else if ((adaHurufKecil || adaHurufBesar) && adaAngka && !adaSimbol) {
+        karakter = 62; 
+    } 
+    else if ((adaHurufKecil || adaHurufBesar) && adaAngka && adaSimbol) {
+        karakter = 94; 
+    } 
+    else {
+        karakter = 0;
+        if (adaHurufKecil) karakter += 26;
+        if (adaHurufBesar) karakter += 26;
+        if (adaAngka) karakter += 10;
+        if (adaSimbol) karakter += 32;
+    }
 }
