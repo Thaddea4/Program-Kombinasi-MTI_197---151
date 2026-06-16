@@ -59,4 +59,24 @@ int main() {
     cout << "Panjang password         : " << panjang << " karakter" << endl;
     cout << "Jumlah karakter tersedia : " << karakter << endl;
     cout << "Jumlah kemungkinan (N)   : " << setprecision(0) << kombinasi << endl;
+    
+    if (adaHurufKecil && !adaHurufBesar && !adaAngka && !adaSimbol) {
+        cout << "Kategori keamanan        : Lemah" << endl;
+    }
+    else if ((adaHurufKecil || adaHurufBesar) && adaAngka && !adaSimbol) {
+        cout << "Kategori keamanan        : Sedang" << endl;
+    }
+    else if ((adaHurufKecil || adaHurufBesar) && adaAngka && adaSimbol) {
+        cout << "Kategori keamanan        : Kuat" << endl;
+    }
+    else {
+        if (kombinasi <= 208827064576.0) 
+            cout << "Kategori keamanan        : Lemah" << endl;
+        else if (kombinasi <= 218340105584896.0) 
+            cout << "Kategori keamanan        : Sedang" << endl;
+        else 
+            cout << "Kategori keamanan        : Kuat" << endl;
+    }
+
+    return 0;
 }
