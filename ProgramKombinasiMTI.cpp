@@ -15,4 +15,9 @@ int main() {
     
     int panjang = password.length();
     long long karakter = 0;
+    
+    bool adaHurufKecil = false;
+    bool adaHurufBesar = false;
+    bool adaAngka = false;
+    bool adaSimbol = false;
 }
