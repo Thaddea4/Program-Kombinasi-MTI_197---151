@@ -50,4 +50,6 @@ int main() {
         if (adaAngka) karakter += 10;
         if (adaSimbol) karakter += 32;
     }
+    
+    long double kombinasi = pow(karakter, panjang);
 }
