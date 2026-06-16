@@ -52,4 +52,11 @@ int main() {
     }
     
     long double kombinasi = pow(karakter, panjang);
+    
+    cout << endl;
+    cout << "=== HASIL ANALISIS REKOMENDASI ===" << endl;
+    cout << "Password kamu            : " << password << endl;
+    cout << "Panjang password         : " << panjang << " karakter" << endl;
+    cout << "Jumlah karakter tersedia : " << karakter << endl;
+    cout << "Jumlah kemungkinan (N)   : " << setprecision(0) << kombinasi << endl;
 }
