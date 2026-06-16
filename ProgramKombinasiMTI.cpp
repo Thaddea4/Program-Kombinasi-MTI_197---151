@@ -20,4 +20,17 @@ int main() {
     bool adaHurufBesar = false;
     bool adaAngka = false;
     bool adaSimbol = false;
+    
+    for (int i = 0; i < panjang; i++) {
+        char c = password[i];
+        if (c >= 'a' && c <= 'z') {
+            adaHurufKecil = true;
+        } else if (c >= 'A' && c <= 'Z') {
+            adaHurufBesar = true;
+        } else if (c >= '0' && c <= '9') {
+            adaAngka = true;
+        } else {
+            adaSimbol = true; 
+        }
+    }
 }
